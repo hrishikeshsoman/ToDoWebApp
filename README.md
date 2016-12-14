@@ -1,2 +1,1 @@
-#ToDoWebApp
-#A simple todo app
+# ToDoWebApp
