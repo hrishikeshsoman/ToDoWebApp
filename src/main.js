@@ -1,5 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import style from './main.scss';
+import App from './App/app.js';
 
-ReactDOM.render(<h1 className={style.example}>Hello World</h1>, document.getElementById('example'));
+ReactDOM.render(<App />, document.getElementById('app-target'));
