@@ -15,14 +15,11 @@ export default class Text extends Component {
     const {
       content,
       onPress,
-      classNames,
       children
     } = this.props;
 
-    const styleObjs = stylePropsParser(classNames, styles);
-
     return (
-      <div onClick={this.handleOnPress.bind(this)} className={styleObjs}>
+      <div onClick = {()=>this.handleOnPress()}>
         {content || children}
       </div>
     );
@@ -30,7 +27,6 @@ export default class Text extends Component {
 }
 
 Text.propTypes = {
-  classNames: string,
   onPress: func,
   content: string,
   children: node,
